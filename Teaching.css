@@ -1,0 +1,113 @@
+#navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+    font-size: 20px;
+    background: linear-gradient(90deg,#ff4081,#ffcc00);
+    color: white;
+    overflow-y: auto;
+    border-right: 5px solid #ff5722; 
+  }
+  #main-doc{
+    margin-left: 270px;
+    padding: 20px;
+    padding-top: 20px;
+  }
+  #navbar ul li{
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  #navbar li{
+    margin-bottom: 15px;
+  }
+  #navbar ul li:hover{
+    background: #ff66b2;
+    border-radius: 10px;
+  }
+  #navbar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+  }
+  #navbar a:hover{
+    background-color: #575757;
+  }
+  .main-section{
+    background: linear-gradient(135deg,#ffcc00,#ff66b2);
+    border: 3px solid #ff4081;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 15px rgba(255, 105, 180, 0.3);
+    transition: transform 0.3s ease-in-out;
+    padding-top: 80px; 
+  }
+  .main-section h2{
+    color: #008cff;
+    font-size: 26px;
+    text-shadow: 2px 2px 5px #ff4081;
+    border-bottom: 3px dashed #444;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  .main-section p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333333;
+    text-align: justify;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+  }
+  .main-section ul{
+    padding-left: 25px;
+  } 
+  .main-section:hover{
+    transform: rotate(-1deg) scale(1.05);
+  } 
+  .main-section li{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4081;
+  }
+  @media screen and (max-width: 768px) {
+    #navbar {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+  
+    #navbar ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    #navbar li {
+      padding: 10px;
+    }
+    #main-doc {
+      margin-left: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      font-size: larger;
+      text-align: center;
+    }
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  html, body{
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
